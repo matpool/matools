@@ -22,7 +22,7 @@ Matools👨🏻‍🌾👩🏻‍🌾是一个由矩池云开源的机器学习�
 ## 一键修改国内镜像源🧐
 
 ```sh
-git clone https://github.com/matpool/matools.git 
+ git clone https://github.com/matpool/matools.git 
 bash /matools/mirrors/switch_apt_source.sh 
 bash /matools/mirrors/switch_conda_source.sh
 bash /matools/mirrors/switch_pip_source.sh
