@@ -7,8 +7,13 @@ PIP_PATH=${HOME}/".pip"
 PIP_CONF=${HOME}/".pip/pip.conf"
 
 # make sure the folder and file are exist
-if [ ! -d ${PIP_PATH} ]; then
+if [ ! -f ${PIP_CONF} ]; then
     mkdir ${PIP_PATH}
+    touch ${PIP_CONF}
+else
+    if [ ! -f ${PIP_CONF}_bk ]; then
+        cp ${PIP_CONF} ${PIP_CONF}_bk
+    fi
 fi
 
 if [ ! -f ${PIP_CONF} ]; then

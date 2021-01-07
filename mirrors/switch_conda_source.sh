@@ -6,6 +6,10 @@ CONDA_CONF="$HOME/.condarc"
 
 if [ ! -f ${CONDA_CONF} ]; then
     touch ${CONDA_CONF}
+else
+    if [ ! -f ${APT_SOURCE}_bk ]; then
+        cp ${APT_SOURCE} ${APT_SOURCE}_bk
+    fi
 fi
 
 SOURCES=(
