@@ -17,6 +17,9 @@ SOURCES=(
     "https://anaconda.mirrors.sjtug.sjtu.edu.cn"
     "https://mirrors.bfsu.edu.cn/anaconda"
     "https://mirrors.nju.edu.cn/anaconda"
+    "https://mirrors.njupt.edu.cn/anaconda"
+    "http://mirrors.cqupt.edu.cn/anaconda"
+    "http://mirrors.hit.edu.cn/anaconda"
 )
 
 read -p "请选择您要切换的源的数字编号, 然后按回车
@@ -24,6 +27,9 @@ read -p "请选择您要切换的源的数字编号, 然后按回车
 (1) 上海交通大学(sjtug)
 (2) 北京外国语大学(bfsu)
 (3) 南京大学(nju)
+(4) 南京邮电大学(njupt)
+(5) 重庆邮电大学(cqupt)
+(6) 哈尔滨工业大学(hit)
 " INDEX
 
 if [ ${INDEX} -ge ${#SOURCES[@]} ] || [ ${INDEX} -lt 0 ]; then
