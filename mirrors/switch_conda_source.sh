@@ -18,8 +18,8 @@ SOURCES=(
     "https://mirrors.bfsu.edu.cn/anaconda"
     "https://mirrors.nju.edu.cn/anaconda"
     "https://mirrors.njupt.edu.cn/anaconda"
-    "http://mirrors.cqupt.edu.cn/anaconda"
-    "http://mirrors.hit.edu.cn/anaconda"
+    "https://mirrors.cqupt.edu.cn/anaconda"
+    "https://mirrors.hit.edu.cn/anaconda"
 )
 
 read -p "请选择您要切换的源的数字编号, 然后按回车
