@@ -18,6 +18,8 @@ SOURCES=(
     "https://mirrors.zju.edu.cn/ubuntu/"
     "https://mirrors.cloud.tencent.com/ubuntu"
     "https://repo.huaweicloud.com/ubuntu/"
+    "https://mirrors.bfsu.edu.cn/ubuntu/"
+    "http://cn.archive.ubuntu.com/ubuntu/"
 )
 
 read -p "请选择您要切换的源的数字编号, 然后按回车
@@ -28,6 +30,8 @@ read -p "请选择您要切换的源的数字编号, 然后按回车
 (4) 浙江大学(zju)
 (5) 腾讯云(tencent)
 (6) 华为云(huawei)
+(7) 北京外国语大学(bfsu)
+(8) 官方源(ubuntu)
 " INDEX
 
 if [ ${INDEX} -ge ${#SOURCES[@]} ] || [ ${INDEX} -lt 0 ]; then

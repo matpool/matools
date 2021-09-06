@@ -18,6 +18,8 @@ git clone https://github.com.cnpmjs.org/matpool/matools.git
 
 - [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
 
+- [北京大学开源镜像站](https://mirrors.pku.edu.cn/)
+
 - [北京外国语大学开源软件镜像站](https://mirrors.bfsu.edu.cn/)
 
 - [南京大学开源镜像站](https://mirrors.nju.edu.cn/)
@@ -28,6 +30,8 @@ git clone https://github.com.cnpmjs.org/matpool/matools.git
 
 - [浙江大学开源镜像站](https://mirrors.zju.edu.cn/)
 
+- [南方科技大学开源镜像站](https://mirrors.sustech.edu.cn/)
+
 - [阿里云官方镜像站](https://developer.aliyun.com/mirror/)
 
 - [腾讯云软件源](https://mirrors.cloud.tencent.com/)
@@ -37,5 +41,11 @@ git clone https://github.com.cnpmjs.org/matpool/matools.git
 - [网易开源镜像站](http://mirrors.163.com/)
 
 - [豆瓣源](https://pypi.doubanio.com/simple/)
+
+- [Ubuntu](http://cn.archive.ubuntu.com/)
+
+- [PyPI](https://pypi.org/)
+
+- [Anaconda](https://conda.anaconda.org/)
 
 脚本由[矩池云](https://matpool.com/)整理发布
