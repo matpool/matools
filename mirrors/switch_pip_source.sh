@@ -33,6 +33,8 @@ SOURCES=(
     "https://mirrors.bfsu.edu.cn/pypi/web/simple/"
     "https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple"
     "https://mirrors.nju.edu.cn/pypi/web/simple/"
+    "https://mirrors.pku.edu.cn/pypi/simple"
+    "https://pypi.org/simple/"
 )
 
 # trust-host array
@@ -48,6 +50,8 @@ HOST=(
     "mirrors.bfsu.edu.cn"
     "mirrors.sjtug.sjtu.edu.cn"
     "mirrors.nju.edu.cn"
+    "mirrors.pku.edu.cn"
+    "pypi.org"
 )
 
 read -p "请选择您要切换的源的数字编号, 然后按回车
@@ -62,6 +66,8 @@ read -p "请选择您要切换的源的数字编号, 然后按回车
 (8) 北京外国语大学(bfsu)
 (9) 上海交通大学(sjtug)
 (10) 南京大学(nju)
+(11) 北京大学(pku)
+(12) 官方源(不推荐pypi)
 " INDEX
 
 if [ ${INDEX} -ge ${#SOURCES[@]} ] || [ ${INDEX} -lt 0 ]; then
