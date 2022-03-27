@@ -11,7 +11,6 @@ bash ./matools/mirrors/switch_pip_source.sh
 
 ```sh
 git clone https://gitee.com/matpools/matools.git
-git clone https://github.com.cnpmjs.org/matpool/matools.git
 ```
 
 ## 感谢🤞

@@ -4,17 +4,12 @@ set -e
 
 CONDA_CONF="$HOME/.condarc"
 
-if [ ! -f ${CONDA_CONF} ]; then
-    touch ${CONDA_CONF}
-else
-    if [ ! -f ${CONDA_CONF}_bk ]; then
-        cp ${CONDA_CONF} ${CONDA_CONF}_bk
-    fi
+if [ -f ${CONDA_CONF} ] && [ ! -f ${CONDA_CONF}_bk ]; then
+    cp ${CONDA_CONF} ${CONDA_CONF}_bk
 fi
 
 SOURCES=(
     "https://mirrors.tuna.tsinghua.edu.cn/anaconda"
-    "https://anaconda.mirrors.sjtug.sjtu.edu.cn"
     "https://mirrors.bfsu.edu.cn/anaconda"
     "https://mirrors.nju.edu.cn/anaconda"
     "https://mirrors.njupt.edu.cn/anaconda"
@@ -27,15 +22,14 @@ SOURCES=(
 
 read -p "请选择您要切换的源的数字编号, 然后按回车
 (0) 清华大学(tsinghua)
-(1) 上海交通大学(sjtug)
-(2) 北京外国语大学(bfsu)
-(3) 南京大学(nju)
-(4) 南京邮电大学(njupt)
-(5) 重庆邮电大学(cqupt)
-(6) 哈尔滨工业大学(hit)
-(7) 北京大学(pku)
-(8) 南方科技大学(sustech)
-(9) 官方源(不推荐anaconda)
+(1) 北京外国语大学(bfsu)
+(2) 南京大学(nju)
+(3) 南京邮电大学(njupt)
+(4) 重庆邮电大学(cqupt)
+(5) 哈尔滨工业大学(hit)
+(6) 北京大学(pku)
+(7) 南方科技大学(sustech)
+(8) 官方源(不推荐anaconda)
 " INDEX
 
 if [ ${INDEX} -ge ${#SOURCES[@]} ] || [ ${INDEX} -lt 0 ]; then
@@ -58,5 +52,8 @@ custom_channels:
   pytorch: ${SOURCES[${INDEX}]}/cloud
   simpleitk: ${SOURCES[${INDEX}]}/cloud" >${CONDA_CONF}
 
-conda clean -i
+if [ command -v conda ] &>/dev/null; then
+    conda clean -i
+fi
+
 echo "写入conda镜像源完成"

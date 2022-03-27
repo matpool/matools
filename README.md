@@ -22,10 +22,10 @@ Matools👨🏻‍🌾👩🏻‍🌾是一个由矩池云开源的机器学习�
 ## 一键修改国内镜像源🧐
 
 ```sh
-git clone https://github.com/matpool/matools.git 
-bash /matools/mirrors/switch_apt_source.sh 
-bash /matools/mirrors/switch_conda_source.sh
-bash /matools/mirrors/switch_pip_source.sh
+git clone https://github.com/matpool/matools.git
+bash ./matools/mirrors/switch_apt_source.sh
+bash ./matools/mirrors/switch_conda_source.sh
+bash ./matools/mirrors/switch_pip_source.sh
 ```
 
 详细内容查看[修改国内镜像源](/mirrors/README.md)
@@ -36,7 +36,6 @@ bash /matools/mirrors/switch_pip_source.sh
 
 ```sh
 git clone https://gitee.com/matpools/matools.git
-git clone https://github.com.cnpmjs.org/matpool/matools.git
 ```
 
 ## 欢迎关注交流

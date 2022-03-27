@@ -4,6 +4,11 @@ set -e
 
 source /etc/os-release
 
+if [ "${NAME}" != "Ubuntu" ]; then
+    echo "APT镜像源切换当前仅支持Ubuntu系统"
+    exit 1
+fi
+
 APT_SOURCE="/etc/apt/sources.list"
 
 if [ ! -f ${APT_SOURCE}_bk ]; then
